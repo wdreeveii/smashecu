@@ -18,7 +18,6 @@
 // Instance data for the PLIC.
 plic_instance_t g_plic;
 
-
 static const char greet_msg[] = "\
 SMASH ECU \n\
 ";
@@ -79,14 +78,15 @@ int main(int argc, char **argv)
 
   // Set up the GPIOs such that the LED GPIO
   // can be used as both Inputs and Outputs.
+  int ii = 0;
   while(1) {
     //printf("d: %d\n", ii++);
 
-    char test[101] = {0};
+    /*char test[101] = {0};
     int num = read(1, test, 100);
     if (num) {
       printf("Got %d bytes: %s\n", num, test);
-    }
+    }*/
   }
 
   //GPIO_REG(GPIO_OUTPUT_EN)  &= ~((0x1 << BUTTON_0_OFFSET));

@@ -3,7 +3,6 @@
 
 #include "interrupt/interrupt.h"
 
-
 void display_init(plic_instance_t * this_plic);
 
 #endif
